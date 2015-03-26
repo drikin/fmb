@@ -18,7 +18,7 @@
 
     i.onload = function() {
         console.log('loaded');
-        $(d.head).contents().append("<style>body {font-family: helvetica, arial,'lucida grande', '游ゴシック', YuGothic, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif !important;} .panelFlyout {right: 0 !important;}</style>");
+        $(d.head).contents().append("<style>body {font-family: helvetica, arial,'lucida grande', 'Hiragino Kaku Gothic ProN', '游ゴシック', YuGothic, Meiryo, sans-serif !important;} .panelFlyout {right: 0 !important;}</style>");
         // disable Meiryo hack once cause Mac font will be ugly
         //d.body.style.fontFamily = "Meiryo UI";
 
