@@ -1,7 +1,7 @@
 var NwBuilder = require('node-webkit-builder');
 var nw = new NwBuilder({
     buildDir: 'dist',
-    files: './**/**', // use the glob format
+    files: ['package.json', 'index.html', 'stage.css', 'stage.js'],
     platforms: ['win', 'osx']
     //winIco: 'res/slack.ico'
 });
