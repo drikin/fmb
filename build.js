@@ -4,8 +4,8 @@ var nw = new NwBuilder({
     files: ['package.json', 'index.html', 'stage.css', 'stage.js', 'node_modules/jquery/**'],
     platforms: ['win64', 'osx64'],
     macIcns: 'fbm.icns',
-    macZip: true
-    //winIco: 'res/slack.ico'
+    macZip: true,
+    winIco: 'fbm.ico'
 });
 
 // Log stuff you want
