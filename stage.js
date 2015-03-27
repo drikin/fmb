@@ -40,6 +40,7 @@
         }
 
         // observe message notification count on the blue bar
+        var permission = Notification.permission;
         var messageBadgeCountTag = d.querySelector('#mercurymessagesCountValue');
         if (messageBadgeCountTag) {
           var badgeCountObserver = new MutationObserver(function(mutations) {
@@ -49,6 +50,9 @@
                 var count = parseInt(addedNodes[0].data);
                 if (count) {
                   win.setBadgeLabel(count);
+                  if (permission === "granted") {
+                    var n = new Notification(d.title);
+                  }
                 } else {
                   win.setBadgeLabel("");
                 }
