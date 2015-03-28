@@ -39,7 +39,7 @@
   "nodejs": true,
   "single-instance": true,
   "window": {
-    "icon": "icon.png",
+    "icon": "fbm.iconset/icon_128x128.png",
     "toolbar": false,
     "height": 600,
     "width": 740,
