@@ -1,11 +1,12 @@
 var NwBuilder = require('node-webkit-builder');
 var nw = new NwBuilder({
     buildDir: 'dist',
-    files: ['package.json', 'index.html', 'stage.css', 'stage.js', 'node_modules/jquery/**'],
+    files: ['package.json'],
     platforms: ['win64', 'osx64'],
     macIcns: 'fbm.icns',
-    macZip: true
-    //winIco: 'fbm.ico'
+    macZip: true,
+    version: '0.12.1',
+    winIco: 'fbm.ico'
 });
 
 // Log stuff you want

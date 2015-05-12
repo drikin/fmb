@@ -34,13 +34,14 @@
   "engines": {
     "node-webkit": ">=0.10.0"
   },
-  "main": "app://fbm/index.html",
+  "main": "http://messenger.com/",
+  "node-remote": "messenger.com",
   "chromium-args": "--disable-extensions --disable-flash-3d --disable-java --disable-webgl",
   "nodejs": true,
   "single-instance": true,
   "window": {
     "icon": "fbm.iconset/icon_128x128.png",
-    "toolbar": false,
+    "toolbar": true,
     "height": 600,
     "width": 740,
     "title": "FBM",
